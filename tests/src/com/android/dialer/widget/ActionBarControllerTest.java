@@ -86,8 +86,13 @@ public class ActionBarControllerTest extends ActivityInstrumentationTestCase2<Di
         }
 
         @Override
-        public ActionBar getActionBar() {
-            return mActionBar;
+        public int getActionBarHideOffset() {
+            return actionBarHideOffset;
+        }
+
+        @Override
+        public void setActionBarHideOffset(int offset) {
+            actionBarHideOffset = offset;
         }
     }
 
